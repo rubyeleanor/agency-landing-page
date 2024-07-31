@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "barlow", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}

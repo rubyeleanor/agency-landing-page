@@ -1,0 +1,54 @@
+html {
+    font-size: 18px;
+}
+
+:root {
+    --font-15px: 0.8rem;
+    --font-16px: 0.9rem;
+    --font-18px: 1rem;
+    --font-20px: 1.1rem;
+    --font-28px: 1.5rem;
+    --font-32px: 1.8rem;
+    --font-40px: 2.2rem;
+    --font-56px: 3.1rem;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.heading {
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'fraunces', serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.7rem;
+
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-transform: uppercase;
+}
