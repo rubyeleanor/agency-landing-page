@@ -66,9 +66,7 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.square {
-    height: 600px;
-}
+
 
 .square img {
     @media screen and (min-width: 768px) {
@@ -89,14 +87,30 @@ header {
 
 }
 
-blurb-img1 {
+.blurb-img1 {
     grid-column: 2;
     grid-row: 1;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/images/mobile/image-transform.jpg');
+
+    @media screen and (min-width: 768px) {
+        background-image: url('/images/desktop/image-transform.jpg');
+    }
 }
 
 .blurb-img2 {
     grid-column: 1;
     grid-row: 2;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/images/mobile/stand-out.jpg');
+
+    @media screen and (min-width: 768px) {
+        background-image: url('/images/desktop/image-stand-out.jpg');
+    }
 }
 
 .blurb2 {
@@ -115,6 +129,42 @@ blurb-img1 {
     color: var(--grey-text);
 }
 
+
+#learn1::before {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    z-index: -1;
+    background-color: var(--yellow);
+    border-radius: 0.3rem;
+    height: 0.5rem;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#learn1:hover::before {
+    opacity: 1;
+}
+
+#learn2::before {
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    z-index: -1;
+    background-color: var(--soft-red);
+    border-radius: 0.3rem;
+    height: 0.5rem;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#learn2:hover::before {
+    opacity: 1;
+}
+
+
 .blurb3 {
     grid-column: 1;
     grid-row: 3;
@@ -123,7 +173,7 @@ blurb-img1 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    object-fit: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/images/mobile/image-graphic-design.jpg');
 
@@ -140,8 +190,9 @@ blurb-img1 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    object-fit: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+
     background-image: url('/images/mobile/image-photography.jpg');
 
     @media screen and (min-width: 768px) {
@@ -210,8 +261,6 @@ footer {
 .footer-logo {
     margin-top: 70px;
     margin-bottom: 50px;
-    width: 170px;
-
 }
 
 .footer-links {
