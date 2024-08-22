@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 400px;
+  background-color: var(--off-white);
 }
 @media screen and (min-width: 768px) {
   body {
@@ -79,7 +80,7 @@ h1 {
   color: white;
   font-size: var(--font-40px);
   letter-spacing: 0.45rem;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -201,6 +202,7 @@ h4 {
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
   --lt-yellow: hwb(51 48% 0%);
+  --off-white: hsl(34, 100%, 99%);
   --GD-cyan: hsl(198, 62%, 26%);
   --GD-cyan-dark: #24554A;
   --PT-blue: hsl(198, 62%, 26%);
@@ -227,14 +229,14 @@ header {
 }
 
 .top-menu-container {
-  padding: 32px 24px;
+  padding: 30px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
   .top-menu-container {
-    padding: 46px 40px;
+    padding: 30px 40px;
   }
 }
 
