@@ -12,7 +12,6 @@ navLinks.forEach(i =>
     i.addEventListener('click', () => {
         openBtn.classList.remove('navbtn-open');
         navMenu.classList.remove('active');
-    })
-)
+    }))
 
 
