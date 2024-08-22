@@ -8,7 +8,11 @@ openBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 })
 
-navLinks.addEventListener('click', () => {
-    openBtn.classList.remove('navbtn-open');
-    navMenu.classList.remove('active');
-})
+navLinks.forEach(i =>
+    i.addEventListener('click', () => {
+        openBtn.classList.remove('navbtn-open');
+        navMenu.classList.remove('active');
+    })
+)
+
+
