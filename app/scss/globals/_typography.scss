@@ -53,14 +53,25 @@ ul {
 h1 {
     text-transform: uppercase;
     color: white;
-    padding: 100px 0;
-    font-size: var(--font-56px);
+    font-size: var(--font-40px);
     letter-spacing: 0.45rem;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+        font-size: var(--font-56px);
+
+    }
 }
 
 h2 {
-    font-size: var(--font-40px);
+    font-size: var(--font-32px);
     color: var(--dark-text);
+
+    @media screen and (min-width: 768px) {
+        font-size: var(--font-40px);
+    }
 }
 
 h3 {
@@ -68,12 +79,17 @@ h3 {
 }
 
 h4 {
-    font-size: var(--font-20px);
+    font-size: var(--font-16px);
     color: var(--lt-grey);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     padding-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        font-size: var(--font-20px);
+    }
+
 }
 
 .learn-more {
@@ -82,7 +98,12 @@ h4 {
     color: var(--dark-text);
     position: relative;
     padding: 8px;
-    width: fit-content
+    width: fit-content;
+    align-self: center;
+
+    @media screen and (min-width: 768px) {
+        align-self: start;
+    }
 }
 
 .blurb3 h3 {
@@ -90,10 +111,14 @@ h4 {
 }
 
 .blurb3 p {
-    padding: 30px 180px 60px;
     font-size: var(--font-16px);
     text-align: center;
     color: var(--GD-cyan);
+    padding: 27px 24px 60px 24px;
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 180px 60px;
+    }
 }
 
 .blurb4 h3 {
@@ -101,15 +126,25 @@ h4 {
 }
 
 .blurb4 p {
-    padding: 30px 180px 60px;
+
     font-size: var(--font-16px);
     text-align: center;
     color: var(--PT-blue);
+    padding: 27px 24px 60px 24px;
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 180px 60px;
+    }
 }
 
 .review {
     color: var(--grey-text);
     font-size: var(--font-16px);
+    margin: 32px auto;
+
+    @media screen and (min-width: 768px) {
+        margin: 60px auto;
+    }
 
 }
 
@@ -117,6 +152,7 @@ h4 {
     color: var(--dark-text);
     font-family: 'fraunces', serif;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 
 .client-title {

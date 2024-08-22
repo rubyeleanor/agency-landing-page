@@ -30,18 +30,19 @@
 
       <nav>
         <span id="nav-label" hidden>Navigation</span>
-        <button hidden id="OpenBtn" class="nav-open" aria-expanded="false" aria-labelledby="nav-label">
+        <button id="OpenBtn" class="nav-open" aria-labelledby="nav-label">
           <img src="./images/icon-hamburger.svg" alt="">
         </button>
-        <div class="top-nav-menu" role="dialog" aria-labelledby="nav-label">
-          <!--no close button this time-->
-          <ul class="top-nav-links">
-            <li class="top-nav-item"><a href="" class="top-nav-link">About</a></li>
-            <li class="top-nav-item"><a href="" class="top-nav-link">Services</a></li>
-            <li class="top-nav-item"><a href="" class="top-nav-link">Projects</a></li>
-            <li class="top-nav-item heading bold"><a href="" class="contact-button">Contact</a></li>
-          </ul>
-        </div>
+
+        <!--no close button this time-->
+        <ul class="top-nav-menu" aria-labelledby="nav-label" role="dialog">
+          <li class="top-nav-item"><a href="" class="top-nav-link">About</a></li>
+          <li class="top-nav-item"><a href="" class="top-nav-link">Services</a></li>
+          <li class="top-nav-item"><a href="" class="top-nav-link">Projects</a></li>
+          <li class="top-nav-item heading bold"><a href="" class="contact-button">Contact</a></li>
+        </ul>
+
+
       </nav>
     </div>
 
@@ -185,6 +186,7 @@
     </div>
   </footer>
 
+  <script src="./app/js/script.js"></script>
 
 </body>
 
