@@ -1,0 +1,139 @@
+//header
+
+header {
+    height: 538px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/mobile/image-header.jpg);
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 800px;
+    }
+}
+
+.top-menu-container {
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 40px;
+    }
+}
+
+.logo {
+    height: 1.1rem;
+
+    @media screen and (min-width: 768px) {
+        height: 1.8rem;
+    }
+}
+
+#OpenBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    display: block;
+    margin-inline-start: auto;
+    transition: 0.5s;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.navbtn-open {
+    opacity: 0.5;
+}
+
+.top-nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background: white;
+    width: 50%;
+    padding: 25px 0;
+    left: 25%;
+    top: -100%;
+    transition: 0.5s;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+}
+
+.top-nav-menu.active {
+    @media screen and (max-width: 768px) {
+        top: 15%;
+    }
+}
+
+.top-nav-menu::after {
+    @media screen and (max-width: 768px) {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10%;
+        border-bottom: 50px solid white;
+        border-left: 50px solid transparent;
+    }
+}
+
+.top-nav-item {
+    padding: 18px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.top-nav-link {
+    margin: auto;
+    color: var(--grey-text);
+
+    @media screen and (min-width: 768px) {
+        color: white;
+        margin-right: 25px;
+    }
+
+    @media screen and (min-width: 980px) {
+        margin-right: 47px;
+    }
+}
+
+.top-nav-link:hover {
+    opacity: 0.8;
+}
+
+.contact-button {
+    border-radius: 28px;
+    text-transform: uppercase;
+    color: var(--dark-text);
+    background-color: var(--yellow);
+    padding: 15px 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+        background-color: white;
+    }
+}
+
+.contact-button:hover {
+    background-color: var(--lt-yellow);
+
+    @media screen and (min-width: 768px) {
+        background-color: #6fcefe;
+        color: white;
+    }
+}
+
+#page-header {
+    text-align: center;
+}
