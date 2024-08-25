@@ -126,11 +126,16 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   h4 {
     font-size: var(--font-20px);
+  }
+}
+@media screen and (min-width: 980px) {
+  h4 {
+    padding-bottom: 80px;
   }
 }
 
@@ -195,7 +200,7 @@ h4 {
 .review {
   color: var(--grey-text);
   font-size: var(--font-16px);
-  margin: 32px auto;
+  margin: 20px auto;
 }
 @media screen and (min-width: 980px) {
   .review {
@@ -207,7 +212,11 @@ h4 {
   color: var(--dark-text);
   font-family: "fraunces", serif;
   font-weight: 900;
-  margin-bottom: 10px;
+}
+@media screen and (min-width: 980px) {
+  .client-name {
+    margin-bottom: 10px;
+  }
 }
 
 .client-title {
